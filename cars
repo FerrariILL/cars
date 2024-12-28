@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .car-section {
+            margin-bottom: 2rem;
+        }
+        .car-section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+        .car-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .car {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .car img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Cars Hub</h1>
+        <p>Your ultimate destination for car enthusiasts!</p>
+    </header>
+    <nav>
+        <a href="#sports">Sports Cars</a>
+        <a href="#suv">SUVs</a>
+        <a href="#electric">Electric Cars</a>
+    </nav>
+    <div class="content">
+        <section id="sports" class="car-section">
+            <h2>Sports Cars</h2>
+            <div class="car-gallery">
+                <div class="car">
+                    <img src="https://via.placeholder.com/300" alt="Sports Car">
+                    <h3>Ferrari F8</h3>
+                    <p>The ultimate sports car with thrilling performance and design.</p>
+                </div>
+                <div class="car">
+                    <img src="https://via.placeholder.com/300" alt="Sports Car">
+                    <h3>Lamborghini Aventador</h3>
+                    <p>A perfect blend of power, speed, and luxury.</p>
+                </div>
+            </div>
+        </section>
+        <section id="suv" class="car-section">
+            <h2>SUVs</h2>
+            <div class="car-gallery">
+                <div class="car">
+                    <img src="https://via.placeholder.com/300" alt="SUV">
+                    <h3>Range Rover Evoque</h3>
+                    <p>Luxury and off-road capability combined in one SUV.</p>
+                </div>
+                <div class="car">
+                    <img src="https://via.placeholder.com/300" alt="SUV">
+                    <h3>Jeep Wrangler</h3>
+                    <p>Unmatched durability and rugged design for adventures.</p>
+                </div>
+            </div>
+        </section>
+        <section id="electric" class="car-section">
+            <h2>Electric Cars</h2>
+            <div class="car-gallery">
+                <div class="car">
+                    <img src="https://via.placeholder.com/300" alt="Electric Car">
+                    <h3>Tesla Model S</h3>
+                    <p>Leading the way in electric innovation and performance.</p>
+                </div>
+                <div class="car">
+                    <img src="https://via.placeholder.com/300" alt="Electric Car">
+                    <h3>Nissan Leaf</h3>
+                    <p>Affordable and efficient, perfect for eco-conscious drivers.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Cars Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
